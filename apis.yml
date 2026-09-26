@@ -1,23 +1,49 @@
 aid: arkhive-digital
+
 name: Arkhive Digital
-description: 'Arkhive Digital is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Arkhive Digital is a boutique commerce agency founded in 2025, focused on elevating enterprise brands through strategy, design, implementation, and ongoing support across the full commerce lifecycle. The company offers services such as consulting, experience design, optimization, and replatforming, aiming to help clients make informed decisions before costly implementations. It positions itself as senior‑led, female‑founded, and dedicated to delivering high‑impact commerce solutions for large‑scale enterprises.'
+
 url: https://raw.githubusercontent.com/api-evangelist/arkhive-digital/refs/heads/main/apis.yml
+
+website: https://arkhivedigital.com
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/arkhive-digital-hosts.yml
+- type: Vendors
+  url: vendors/arkhive-digital-vendors.yml
+- type: DomainSecurity
+  url: security/arkhive-digital-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
